@@ -20,8 +20,7 @@ namespace FineUI.Core.EmptyProject.RazorPages
             Configuration = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        // 登记应用使用的服务。
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDistributedMemoryCache();
@@ -42,7 +41,7 @@ namespace FineUI.Core.EmptyProject.RazorPages
 
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // 配置应用的 HTTP 请求管道。
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
