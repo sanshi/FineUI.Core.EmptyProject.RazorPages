@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Web;
 
 namespace FineUI.Core.EmptyProject.RazorPages
 {
-    public class PageBase : PageModel
+    public class PageBase : FineUI.Core.FineUIPageBase
     {
         public override void OnPageHandlerExecuting(PageHandlerExecutingContext context)
         {
