@@ -9,7 +9,7 @@ using System.Web;
 
 namespace FineUI.Core.EmptyProject.RazorPages
 {
-    public class BaseModel : PageModel
+    public class PageBase : PageModel
     {
         public override void OnPageHandlerExecuting(PageHandlerExecutingContext context)
         {
